@@ -80,6 +80,14 @@ Setelah login, halaman admin terbuka normal.
 
 **Perbaikan:**
 
+## US-06 Proteksi halaman admin
+**Prompt:** Baca `docs/user-stories.md` bagian US-07.
+
+Buat fitur daftar produk di halaman admin pada project `katalog-budi` menggunakan data dari database Supabase. Ambil data produk secara langsung dari database, bukan menggunakan data dummy. Tampilkan daftar produk sesuai struktur tabel yang tersedia, termasuk informasi produk yang relevan. Tampilkan loading saat data sedang dimuat, pesan error yang jelas jika pengambilan data gagal, dan pesan jika belum ada produk. Gunakan konfigurasi Supabase yang sudah tersedia di project dan pastikan koneksi database berjalan dengan benar. Jangan mengubah tampilan halaman admin yang sudah ada atau merusak enam fitur wajib yang telah selesai. Pastikan fitur dapat diuji dan data yang ditampilkan sesuai dengan isi database.
+**Hasil yang Diharapkan:**
+
+Halaman admin berhasil menampilkan daftar produk yang diambil langsung dari database Supabase. Informasi produk ditampilkan sesuai dengan struktur tabel database. Saat data sedang dimuat, sistem menampilkan indikator loading. Jika pengambilan data gagal, sistem menampilkan pesan error yang jelas, sedangkan jika belum ada produk, sistem menampilkan pesan bahwa data produk masih kosong. Fitur dapat berjalan dengan baik tanpa mengubah tampilan halaman admin dan tanpa mengganggu enam fitur wajib yang telah selesai.
+
 ## Debugging dan fitur bonus
 
 Tambahkan bagian baru untuk setiap error yang kamu perbaiki atau fitur bonus yang kamu kerjakan.
